@@ -1,2 +1,0 @@
-cls
-rails s

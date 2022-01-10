@@ -25,7 +25,7 @@ async function builder() {
     absWorkingDir: path.join(process.cwd(), "app/javascript"),
     incremental: true,
     banner: {
-      js: ' (() => new EventSource("http://localhost:8082").onmessage = () => location.reload())();',
+      js: ' (() => new EventSource("http://localhost:8082").onmessage = () => setTimeout("location.reload(true);",500))();',
     },
   })
   chokidar.watch(["./app/javascript/**/*.js", "./app/views/**/*.html.erb", "./app/assets/stylesheets/*.css"]).on('all', (event, path) => {

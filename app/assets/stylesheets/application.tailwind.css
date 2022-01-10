@@ -5,11 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.test-lucian {
-    color: red !important;
-    font-size: 50px;
-    /* font-family: 'Be Vietnam Pro', sans-serif !important; */
-    font-family: 'Be Vietnam Pro', sans-serif !important;
-    font-weight: 800;
-    letter-spacing: -1.5px;
+
+
+@layer components {
+    .en-btn-primary {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover: bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
 }
