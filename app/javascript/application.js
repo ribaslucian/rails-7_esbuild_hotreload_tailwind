@@ -2,3 +2,5 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 //import "./components/clock"
+import "./components/mui"
+

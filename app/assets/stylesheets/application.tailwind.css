@@ -5,10 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer components {
     .en-btn-primary {
-        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover: bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .en-cover-center {
+        @apply grid justify-items-center items-center h-screen bg-gray-200
     }
 }
+
+.space--1 { letter-spacing: -1px; }
+.space--1doc5 { letter-spacing: -1.5px; }
+.no-space { white-space: nowrap; }
